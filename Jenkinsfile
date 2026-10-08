@@ -11,13 +11,13 @@ pipeline {
 
     post {
         success {
-            mail to: 'YOUR_EMAIL@gmail.com',
+            mail to: 'marouthu.bc@gmail.com',
                  subject: "Jenkins Build Successful",
                  body: "The Jenkins build was successful."
         }
 
         failure {
-            mail to: 'bhargav.marouthu@gmail.com',
+            mail to: 'marouthu.bc@gmail.com',
                  subject: "Jenkins Build Failed",
                  body: "The Jenkins build has failed."
         }
